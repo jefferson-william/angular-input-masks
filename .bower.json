@@ -1,0 +1,15 @@
+{
+  "name": "angular-input-masks",
+  "homepage": "https://github.com/jefferson-william/angular-input-masks",
+  "version": "2.5.0",
+  "_release": "2.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.5.0",
+    "commit": "bda4d4c02eee2592259f67b25a0c92a71aa8e753"
+  },
+  "_source": "https://github.com/jefferson-william/angular-input-masks.git",
+  "_target": "^2.5.0",
+  "_originalSource": "https://github.com/jefferson-william/angular-input-masks.git",
+  "_direct": true
+}
