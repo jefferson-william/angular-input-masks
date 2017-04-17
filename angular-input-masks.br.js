@@ -1,3 +1,5 @@
+define('angular-input-masks', ['angular', 'moment', 'string-mask', 'mask-factory'], function (angular, moment, StringMask, maskFactory) {
+
 (function (window, angular, undefined) {
 	
 	'use strict';
@@ -12,9 +14,6 @@
 		.directive('uiNfeAccessKeyMask', NfeDirective)
 		.directive('uiBrCarPlateMask', CarPlateDirective)
 		.directive('uiBrPhoneNumber', BrPhoneDirective);
-
-	var StringMask = require('string-mask');
-	var maskFactory = require('mask-factory');
 
 	function BoletoBancarioDirective() {
 		var boletoBancarioMask = new StringMask('00000.00000 00000.000000 00000.000000 0 00000000000000');
@@ -334,8 +333,6 @@
 	
 	'use strict';
 
-	var StringMask = require('string-mask');
-
 	var m = angular.module('ui.utils.masks.helpers', []);
 
 	m.factory('PreFormatters', [function() {
@@ -404,9 +401,6 @@
 		.directive('uiScientificNotationMask', ScientificNotationMaskDirective)
 		.directive('uiTimeMask', TimeMaskDirective)
 		.directive('uiCreditCard', MaskDirective);
-
-	var moment = require('moment');
-	var StringMask = require('string-mask');
 
 	function isISODateString(date) {
 		return /^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}([-+][0-9]{2}:[0-9]{2}|Z)$/
@@ -1015,8 +1009,6 @@
 		};
 	}
 
-	var maskFactory = require('mask-factory');
-
 	function MaskDirective() {
 		var ccSize = 16;
 		var ccMask = new StringMask('0000 0000 0000 0000');
@@ -1050,3 +1042,5 @@
 	angular.module('ui.utils.masks', ['ui.utils.masks.global', 'ui.utils.masks.br']);
 
 })(window, window.angular);
+
+});
