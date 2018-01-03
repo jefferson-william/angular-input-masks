@@ -1,4 +1,4 @@
-define('angular-input-masks', ['angular', 'moment', 'string-mask', 'mask-factory'], function (angular, moment, StringMask, maskFactory) {
+define('angular-input-masks', ['angular', 'moment', 'string-mask', 'mask-factory', 'br-validations', 'validators'], function (angular, moment, StringMask, maskFactory, BrV, validators) {
 
 (function (window, angular, undefined) {
 	
