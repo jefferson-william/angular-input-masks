@@ -49,7 +49,7 @@ define('angular-input-masks', ['angular', 'moment', 'string-mask', 'mask-factory
 			},
 			validations: {
 				cep: function(value) {
-					return value.length === 8;
+					return value.length === 8 || value.length === 9;
 				}
 			}
 		});
